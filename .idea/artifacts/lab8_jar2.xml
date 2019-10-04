@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="lab8:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/lab8_jar2</output-path>
+    <root id="archive" name="lab8.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/jar/client/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="lab8" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/openjfx-11.0.1_linux-x64_bin-sdk.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/study/1styear/programing/javax.mail.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/study/1styear/programing/lab7/lib/postgresql-42.2.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

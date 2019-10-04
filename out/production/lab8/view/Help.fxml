@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Group xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+
+            fx:id="helpUI">
+    <VBox layoutX="5" layoutY="5"  fx:id="addHelpWin" visible="false">
+        <Label text="%help.text.add" />
+    </VBox>
+    <Label wrapText="true" maxWidth="395" fx:id="addifminHelpWin" text="%help.text.addifmin" visible="false"/>
+    <Label wrapText="true" maxWidth="395" fx:id="removeHelpWin" text="%help.text.remove" visible="false"/>
+    <Label wrapText="true" maxWidth="395" fx:id="updateHelpWin" text="%help.text.update" visible="false"/>
+    <Label wrapText="true" maxWidth="395" fx:id="clearHelpWin" text="%help.text.clear" visible="false"/>
+    <Label wrapText="true" maxWidth="395" fx:id="infoHelpWin" text="%help.text.info" visible="false"/>
+    <Group visible="false" fx:id="hatparamHelpWin">
+        <Label maxWidth="395" wrapText="true" layoutX="5" layoutY="5" text="%help.text.hatparam"/>
+        <Button layoutX="5" layoutY="35" text="%slider.size" onAction="#sizeHelp"/>
+        <Button layoutX="105" layoutY="35" text="%slider.shelf" onAction="#shelfHelp"/>
+        <Button layoutX="205" layoutY="35" text="%picker.color" onAction="#colorHelp"/>
+        <Button layoutX="305" layoutY="35" text="%label.content" onAction="#contentHelp"/>
+        <Label maxWidth="395" wrapText="true" layoutX="5" layoutY="65" fx:id="sizeHelpLabel" visible="false" text="%help.text.hatparam.size"/>
+        <Label maxWidth="395" wrapText="true" layoutX="5" layoutY="65" fx:id="shelfHelpLabel" visible="false" text="%help.text.hatparam.shelf"/>
+        <Label maxWidth="395" wrapText="true" layoutX="5" layoutY="65" fx:id="colorHelpLabel" visible="false" text="%help.text.hatparam.color"/>
+        <Label maxWidth="395" wrapText="true" layoutX="5" layoutY="65" fx:id="contentHelpLabel" visible="false" text="%help.text.hatparam.content"/>
+        <Label maxWidth="395" wrapText="true" layoutX="5" layoutY="145" text="%help.text.hataparam.date-user"/>
+    </Group>
+<!--    <Group fx:id="aboutappHelpWin" visible="false">-->
+<!--        <Label maxWidth="395" wrapText="true" layoutX="5" layoutY="5" text="%help.text.aboutapp"/>-->
+<!--    <Button layoutX="5" layoutY="35" text="%button.options" onAction="#optionsHelp"/>-->
+<!--    <Button layoutX="105" layoutY="35" text="%button.howwork" onAction="#howworksHelp"/>-->
+<!--&lt;!&ndash;        <Label layoutX="5" layoutY="75" maxWidth="395" wrapText="true" fx:id="optionsHelpLabel" visible="false" text="%help.text.aboutapp.options"/>&ndash;&gt;-->
+<!--        <Label layoutX="5" layoutY="75" maxWidth="395" wrapText="true" fx:id="howworksHelpLabel" visible="false" text="%help.text.aboutapp.creatingspace"/>-->
+<!--    </Group>-->
+
+</Group>

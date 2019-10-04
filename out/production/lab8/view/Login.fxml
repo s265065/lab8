@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<!--            fx:controller="lab8.controllers.LoginController"-->
+<Group xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+>
+    <MenuBar>
+        <menus>
+        <Menu mnemonicParsing="false" text="%menu.options.language">
+            <items>
+                <MenuItem mnemonicParsing="false" text="%menu.options.language.DA" onAction="#DAlanguage"/>
+                <MenuItem mnemonicParsing="false" text="%menu.options.language.EN" onAction="#ENlanguage"/>
+                <MenuItem mnemonicParsing="false" text="%menu.options.language.ES" onAction="#ESlanguage"/>
+                <MenuItem mnemonicParsing="false" text="%menu.options.language.RU" onAction="#RUlanguage"/>
+                <MenuItem mnemonicParsing="false" text="%menu.options.language.SK" onAction="#SKlanguage"/>
+            </items>
+        </Menu>
+            <Menu mnemonicParsing="false" text="%menu.exit">
+                <items>
+                    <MenuItem text="%menu.exit" onAction="#exit"/>
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+
+
+    <VBox layoutX="50" layoutY="70" visible="true" fx:id="registerWin">
+        <TextField fx:id="emailFormRegister" text="%login.email"/>
+        <TextField fx:id="usernameFormRegister" text="%login.username"/>
+        <PasswordField fx:id="passFormRegister" text="%login.password"/>
+        <Label/>
+        <Button fx:id="registerButton" text="%button.register" onAction="#register"/>
+        <Label text="%login.registered"/>
+        <Button fx:id="toLoginButton" text="%button.login" onAction="#goLogin"/>
+    </VBox>
+
+    <VBox layoutX="50" layoutY="70" visible="false" fx:id="loginWin">
+        <TextField fx:id="usernameForm" text="%login.username" onAction="#login" />
+        <PasswordField fx:id="passForm" text="%login.password" onAction="#login" />
+        <Label/>
+        <Button fx:id="loginButton" text="%button.login" onAction="#login"/>
+        <Label text="%login.unregistered"/>
+        <Button fx:id="toSignupButton" text="%button.register" onAction="#goSignup"/>
+    </VBox>
+
+</Group>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import lab8.ui.HatTable?>
+
+<?import lab8.ui.HatCanvas?>
+<Group xmlns="http://javafx.com/javafx"
+       xmlns:fx="http://javafx.com/fxml" fx:id="root"
+>
+
+    <!-- TODO: menu center!!!-->
+    <!-- menu -->
+    <MenuBar>
+        <menus>
+            <Menu mnemonicParsing="false" text="%menu.options.language">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="%menu.options.language.DA" onAction="#DAlanguage"/>
+                    <MenuItem mnemonicParsing="false" text="%menu.options.language.EN" onAction="#ENlanguage"/>
+                    <MenuItem mnemonicParsing="false" text="%menu.options.language.ES" onAction="#ESlanguage"/>
+                    <MenuItem mnemonicParsing="false" text="%menu.options.language.RU" onAction="#RUlanguage"/>
+                    <MenuItem mnemonicParsing="false" text="%menu.options.language.SK" onAction="#SKlanguage"/>
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="%menu.options.view">
+                <items>
+                    <MenuItem text="%menu.options.view.canvas" onAction="#showCanvas"/>
+                    <MenuItem text="%menu.options.view.table" onAction="#showTable"/>
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false"  text="%menu.help">
+                <items>
+                    <MenuItem text="%menu.help.add" onAction="#addHelp"/>
+                    <MenuItem text="%menu.help.addifmin" onAction="#addifminHelp"/>
+                    <MenuItem text="%menu.help.remove" onAction="#removeHelp"/>
+                    <MenuItem text="%menu.help.update" onAction="#updateHelp"/>
+                    <MenuItem text="%menu.help.info" onAction="#infoHelp"/>
+                    <MenuItem text="%menu.help.clear" onAction="#clearHelp"/>
+                    <MenuItem text="%menu.help.hatparam" onAction="#hatparamHelp"/>
+<!--                    <SeparatorMenuItem/>-->
+<!--                    <MenuItem text="%menu.help.aboutapp" onAction="#aboutapp"/>-->
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="%menu.exit">
+                <items>
+                    <MenuItem text="%menu.exit.logout" onAction="#menuLogout"/>
+                    <MenuItem text="%menu.exit" onAction="#exit"/>
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+
+    <!-- hat param -->
+    <VBox layoutX="5" layoutY="35">
+        <Label text="%picker.color"/>
+        <ColorPicker fx:id="colorPicker"/>
+    </VBox>
+    <VBox layoutX="5" layoutY="85">
+        <Label text="%slider.size"/>
+        <Slider min="0" max="8" fx:id="sizeSlider"
+                showTickMarks="true" showTickLabels="true" snapToTicks="true"
+                majorTickUnit="1" minorTickCount="0"/>
+        <Label text="%slider.shelf"/>
+        <Slider min="1" max="5" fx:id="shelfSlider"
+                showTickLabels="true" showTickMarks="true" snapToTicks="true"
+                majorTickUnit="1" minorTickCount="0"/>
+        <Label text="%label.content"/>
+        <CheckBox text="%checkbox.socks" fx:id="socksCheck"/>
+        <CheckBox text="%checkbox.toothbrush" fx:id="toothbrushCheck"/>
+        <CheckBox text="%checkbox.nail" fx:id="nailCheck"/>
+        <CheckBox text="%checkbox.chief" fx:id="chiefCheck"/>
+        <CheckBox text="%checkbox.soap" fx:id="soapCheck"/>
+        <CheckBox text="%checkbox.copperwire" fx:id="copperwireCheck"/>
+        <CheckBox text="%checkbox.dentifriece" fx:id="dentifrieceCheck"/>
+        <CheckBox text="%checkbox.towel" fx:id="towelCheck"/>
+        <Label/>
+        <HBox layoutX="5" layoutY="205">
+            <ComboBox fx:id="comboBox" promptText="%command.empty"/>
+            <Label text="  "/>
+            <Button text="%button.submit" fx:id="submitButton" layoutX="115" layoutY="245" onAction="#submitClick"/>
+        </HBox>
+        <Label/>
+        <HBox layoutX="5" layoutY="205">
+            <Button text="%button.random" fx:id="randomButton" onAction="#randomClick"/>
+            <Label text="  "/>
+            <Button text="%button.loadSelected" fx:id="loadSelectedButton" onAction="#loadSelectedClick"/>
+        </HBox>
+        <Label/>
+        <HBox layoutX="5" layoutY="255">
+            <Button text="%button.load" fx:id="loadButton" onAction="#loadClick"></Button>
+            <Label text="  "/>
+            <Button text="%button.save" fx:id="saveButton" onAction="#saveClick"></Button>
+        </HBox>
+        <!-- active username -->
+        <HBox layoutX="5" layoutY="325">
+            <Label/>
+            <Label text="%label.active-username"/>
+            <Label fx:id="usernameLabel"/>
+        </HBox>
+    </VBox>
+
+    <!-- command & random -->
+
+    <!-- submit btn -->
+
+
+    <!-- canvas -->
+
+    <HatCanvas layoutX="270" layoutY="30" fx:id="canvas" height="515" width="525" visible="false" />
+
+    <!-- table -->
+
+    <HatTable layoutX="270" layoutY="30" maxHeight="515" maxWidth="525" fx:id="hatTable"/>
+</Group>
+        <!-- TODO: use tooltips to show info about hat on canvas!!!-->
+
+

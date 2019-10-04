@@ -1,0 +1,11 @@
+6,0x42ce18ff,1, 
+6,0x42ce18ff,1, 
+6,0x42ce18ff,1, 
+4,0x950163ff,1, TOWEL
+4,0x950163ff,1, TOWEL
+7,0xfdb773ff,1, SOAP, TOWEL
+2,0x867de3ff,4, TOWEL
+2,0x867de3ff,4, TOWEL
+2,0x867de3ff,4, TOWEL
+2,0x867de3ff,4, TOWEL
+5,0xbc9f54ff,3, 
